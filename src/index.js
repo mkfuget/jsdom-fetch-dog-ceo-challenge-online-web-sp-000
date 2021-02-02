@@ -17,9 +17,9 @@ console.log("test")
 
 function renderImgs(json) {
   const main = document.querySelector('main')
-  json.forEach(message => {
+  for(let i=0; i<json.message.length; i++)
     const img = document.createElement('img')
-    img.src = message[0]
+    img.src = message[i]
     main.appendChild(img)
   })
 
