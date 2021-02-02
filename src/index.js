@@ -20,7 +20,6 @@ function renderImgs(json) {
     img.src = json.message[i]
     main.appendChild(img)
   }
-
 }
 function addbreedJson() {
   const breedUrl = 'https://dog.ceo/api/breeds/list/all'
