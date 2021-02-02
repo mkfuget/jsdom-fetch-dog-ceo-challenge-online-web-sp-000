@@ -1,10 +1,9 @@
 console.log('%c HI', 'color: firebrick')
 const imgUrl = "https://dog.ceo/api/breeds/image/random/4"
-imgUrlData = () =>{
-  return fetch(imgUrl)
+const imgUrlData;
+fetch(imgUrl)
   .then(resp => resp.json())
-  .then(json => console.log(json));
-}
+  .then(json => imgUrlData);
 
 console.log("test")
 
