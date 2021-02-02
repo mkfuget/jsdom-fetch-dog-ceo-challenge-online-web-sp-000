@@ -5,6 +5,7 @@ fetch(breedUrl)
   .then(json => console.log(json))
 
 addImgJson()
+addbreedJson()
 function addImgJson() {
   const imgUrl = "https://dog.ceo/api/breeds/image/random/4"
   fetch(imgUrl)
