@@ -15,7 +15,6 @@ function getImgJson() {
 
 console.log("test")
 
-console.log(resp)
 function renderImgs(json) {
   const main = document.querySelector('main')
   json.forEach(message => {
