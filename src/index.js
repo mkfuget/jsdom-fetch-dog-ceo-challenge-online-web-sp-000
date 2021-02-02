@@ -28,10 +28,10 @@ function addbreedJson() {
 }
 function renderbreeds(json) {
   const ul = document.getElementById('dog-breeds')
-  for(let i=0; i<json.message.length; i++)
+  for(const key in json.message))
   {
     const li = document.createElement('li')
-    li.appendChild(document.createTextNode(json.message[i]))
+    li.appendChild(document.createTextNode(json.message[key]))
     ul.appendChild(li)
   }
 }
