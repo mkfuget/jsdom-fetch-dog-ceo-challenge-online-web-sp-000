@@ -3,8 +3,7 @@ const breedUrl = 'https://dog.ceo/api/breeds/list/all'
 fetch(breedUrl)
   .then(resp => resp.json())
   .then(json => console.log(json))
-  addbreedJson()
-
+addbreedJson()
 addImgJson()
 function addImgJson() {
   const imgUrl = "https://dog.ceo/api/breeds/image/random/4"
