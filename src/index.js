@@ -28,7 +28,7 @@ function addbreedJson() {
 }
 function renderbreeds(json) {
   const ul = document.getElementById('dog-breeds')
-  for(const key in json.message))
+  for(const key in json.message)
   {
     const li = document.createElement('li')
     li.appendChild(document.createTextNode(json.message[key]))
