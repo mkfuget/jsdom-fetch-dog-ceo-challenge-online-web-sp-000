@@ -1,10 +1,16 @@
 console.log('%c HI', 'color: firebrick')
 let imgUrlDa = 0;
+const imgUrl = "https://dog.ceo/api/breeds/image/random/4"
+fetch(imgUrl)
+  .then(resp => resp.json())
+  .then(json => console.log(json))
+}
+
 function getImgJson() {
   const imgUrl = "https://dog.ceo/api/breeds/image/random/4"
   fetch(imgUrl)
     .then(resp => resp.json())
-    .then(json => console.log(json))
+    .then(json => renderImgs(json))
   }
 
 console.log("test")
