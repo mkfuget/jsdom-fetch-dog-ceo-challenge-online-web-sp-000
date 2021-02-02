@@ -20,7 +20,7 @@ function renderImgs(json) {
   for(let i=0; i<json.message.length; i++)
   {
     const img = document.createElement('img')
-    img.src = message[i]
+    img.src = json.message[i]
     main.appendChild(img)
   }
 }
