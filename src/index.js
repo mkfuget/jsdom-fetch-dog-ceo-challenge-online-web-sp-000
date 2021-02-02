@@ -4,4 +4,4 @@ let imgUrlData = fetch(imgUrl)
   .then(resp => resp.json())
 console.log("test")
 
-console.log(imgUrlData)
+console.log(imgUrlData.PromiseResult)
