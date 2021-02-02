@@ -5,7 +5,7 @@ fetch(imgUrl)
   .then(resp => resp.json())
   .then(json => console.log(json))
 
-
+getImgJson()
 function getImgJson() {
   const imgUrl = "https://dog.ceo/api/breeds/image/random/4"
   fetch(imgUrl)
