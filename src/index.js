@@ -31,7 +31,7 @@ function renderbreeds(json) {
   for(let i=0; i<json.message.length; i++)
   {
     const li = document.createElement('li')
-    li.appendChild(document.createTextNode(json.message[i])
+    li.appendChild(document.createTextNode(json.message[i]))
     ul.appendChild(li)
   }
 }
