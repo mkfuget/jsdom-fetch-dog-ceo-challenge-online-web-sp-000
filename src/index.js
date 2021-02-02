@@ -16,7 +16,7 @@ function getImgJson() {
 console.log("test")
 
 function renderImgs(json) {
-  const main = document.querySelector('main')
+  const main = document.querySelector('body')
   for(let i=0; i<json.message.length; i++)
   {
     const img = document.createElement('img')
