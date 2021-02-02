@@ -14,14 +14,13 @@ function addImgJson() {
 }
 function renderImgs(json) {
   const main = document.querySelector('body')
-  const ul = document.createElement('ul')
+  const ul = document.getElementById('dog-breeds')
   for(let i=0; i<json.message.length; i++)
   {
     const li = document.createElement('li')
     li.innerHTML = json.message[i]
     ul.appendChild(li)
   }
-  main.appendChild(ul)
 }
 function addbreedJson() {
   const breedUrl = 'https://dog.ceo/api/breeds/list/all'
