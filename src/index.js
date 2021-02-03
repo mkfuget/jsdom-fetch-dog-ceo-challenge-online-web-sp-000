@@ -6,6 +6,7 @@ fetch(breedUrl)
 addbreedJson()
 addImgJson()
 const selectBox = document.getElementById('breed-dropdown');
+console.log(selectBox)
 selectBox.addEventListener('change', (event) => {
   const ul = document.getElementById('dog-breeds')
   alert("test")
