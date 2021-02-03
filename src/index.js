@@ -6,7 +6,7 @@ fetch(breedUrl)
 addbreedJson()
 addImgJson()
 const selectBox = document.getElementById('breed-dropdown');
-selectBox.addEvenListener('change', (event) => {
+selectBox.addEventListener('change', (event) => {
   const ul = document.getElementById('dog-breeds')
   alert("test")
   for(let child=ul.firstChild; child!==null; child=child.nextSibling) {
