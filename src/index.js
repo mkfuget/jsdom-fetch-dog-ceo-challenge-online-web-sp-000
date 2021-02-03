@@ -8,6 +8,7 @@ addImgJson()
 const selectBox = document.getElementById('breed-dropdown');
 selectBox.addEvenListener('change', function(){
   const ul = document.getElementById('dog-breeds')
+  alert(this.value)
   for(let child=ul.firstChild; child!==null; child=child.nextSibling) {
       if(child.innerHTML.charAt(0) != this.value)
       {
