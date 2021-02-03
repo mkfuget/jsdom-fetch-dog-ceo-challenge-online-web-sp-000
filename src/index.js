@@ -32,7 +32,7 @@ function renderbreeds(json) {
   {
     const li = document.createElement('li')
     li.onclick = function(){
-      alert("working")
+      li.style.color = "red"
     }
     li.appendChild(document.createTextNode(key))
     ul.appendChild(li)
