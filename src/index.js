@@ -48,15 +48,3 @@ function renderbreeds(json) {
   }, false)
 
 }
-const selectBox = document.getElementById('breed-dropdown');
-selectBox.addEventListener('change', (event) => {
-  const ul = document.getElementById('dog-breeds')
-  alert("test")
-  for(let child=ul.firstChild; child!==null; child=child.nextSibling) {
-      if(child.innerHTML.charAt(0) != this.value)
-      {
-        child.style = "none"
-      }
-  }
-
-}, false)
