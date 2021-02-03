@@ -31,6 +31,9 @@ function renderbreeds(json) {
   for(const key in json.message)
   {
     const li = document.createElement('li')
+    li.onClick = function(){
+      li.color = 'red'
+    }
     li.appendChild(document.createTextNode(key))
     ul.appendChild(li)
   }
