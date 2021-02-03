@@ -43,7 +43,7 @@ function renderbreeds(json) {
         console.log(children[i].innerHTML)
         if(children[i].innerHTML.charAt(0) != event.target.value)
         {
-          child.style = "none"
+          children[i].style = "none"
         }
     }
 
