@@ -5,6 +5,17 @@ fetch(breedUrl)
   .then(json => console.log(json))
 addbreedJson()
 addImgJson()
+const selectBox = document.getElementById('breed-dropdown');
+selectBox.addEvenListener('change', function(){
+  const ul = document.getElementById('dog-breeds')
+  for(let child=ul.firstChild; child!==null; child=child.nextSibling) {
+      if(child.innerHTML.charAt(0) != this.value)
+      {
+        child.style = "none"
+      }
+  }
+
+}, false)
 function addImgJson() {
   const imgUrl = "https://dog.ceo/api/breeds/image/random/4"
   fetch(imgUrl)
