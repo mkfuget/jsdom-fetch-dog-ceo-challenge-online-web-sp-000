@@ -31,7 +31,7 @@ function renderbreeds(json) {
   for(const key in json.message)
   {
     const li = document.createElement('li')
-    li.onClick = function(){
+    li.onclick = function(){
       alert("working")
     }
     li.appendChild(document.createTextNode(key))
