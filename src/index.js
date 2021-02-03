@@ -37,7 +37,7 @@ function renderbreeds(json) {
   const selectBox = document.getElementById('breed-dropdown');
   selectBox.addEventListener('change', (event) => {
     const ul = document.getElementById('dog-breeds')
-    alert("test")
+    event.target
     for(let child=ul.firstChild; child!==null; child=child.nextSibling) {
         if(child.innerHTML.charAt(0) != event.target.value)
         {
