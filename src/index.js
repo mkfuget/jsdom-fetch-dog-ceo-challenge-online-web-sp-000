@@ -2,7 +2,9 @@ console.log('%c HI', 'color: firebrick')
 addbreedJson()
 addImgJson()
 const selectBox = document.getElementById('breed-dropdown');
-console.log(selectBox)
+const ul = document.getElementById('dog-breeds')
+
+console.log(ul)
 selectBox.addEventListener('change', (event) => {
   const ul = document.getElementById('dog-breeds')
   alert("test")
