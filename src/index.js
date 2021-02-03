@@ -34,11 +34,21 @@ function renderbreeds(json) {
     li.appendChild(document.createTextNode(key))
     ul.appendChild(li)
   }
+  const selectBox = document.getElementById('breed-dropdown');
+  selectBox.addEventListener('change', (event) => {
+    const ul = document.getElementById('dog-breeds')
+    alert("test")
+    for(let child=ul.firstChild; child!==null; child=child.nextSibling) {
+        if(child.innerHTML.charAt(0) != this.value)
+        {
+          child.style = "none"
+        }
+    }
+
+  }, false)
+
 }
 const selectBox = document.getElementById('breed-dropdown');
-const ul = document.getElementById('dog-breeds')
-
-console.log(ul)
 selectBox.addEventListener('change', (event) => {
   const ul = document.getElementById('dog-breeds')
   alert("test")
