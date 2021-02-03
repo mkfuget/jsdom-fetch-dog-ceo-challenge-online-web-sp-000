@@ -39,6 +39,7 @@ function addbreedJson() {
 }
 function renderbreeds(json) {
   const ul = document.getElementById('dog-breeds')
+  console.log(ul)
   for(const key in json.message)
   {
     const li = document.createElement('li')
