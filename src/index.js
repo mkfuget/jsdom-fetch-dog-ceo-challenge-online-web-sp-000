@@ -38,6 +38,7 @@ function renderbreeds(json) {
   selectBox.addEventListener('change', (event) => {
     const ul = document.getElementById('dog-breeds')
     for(let child=ul.firstChild; child!==null; child=child.nextSibling) {
+        console.log(child)
         if(child.text.charAt(0) != event.target.value)
         {
           child.style = "none"
