@@ -1,8 +1,4 @@
 console.log('%c HI', 'color: firebrick')
-const breedUrl = 'https://dog.ceo/api/breeds/list/all'
-fetch(breedUrl)
-  .then(resp => resp.json())
-  .then(json => console.log(json))
 addbreedJson()
 addImgJson()
 const selectBox = document.getElementById('breed-dropdown');
