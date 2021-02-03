@@ -1,21 +1,6 @@
 console.log('%c HI', 'color: firebrick')
 addbreedJson()
 addImgJson()
-const selectBox = document.getElementById('breed-dropdown');
-const ul = document.getElementById('dog-breeds')
-
-console.log(ul)
-selectBox.addEventListener('change', (event) => {
-  const ul = document.getElementById('dog-breeds')
-  alert("test")
-  for(let child=ul.firstChild; child!==null; child=child.nextSibling) {
-      if(child.innerHTML.charAt(0) != this.value)
-      {
-        child.style = "none"
-      }
-  }
-
-}, false)
 function addImgJson() {
   const imgUrl = "https://dog.ceo/api/breeds/image/random/4"
   fetch(imgUrl)
@@ -50,3 +35,18 @@ function renderbreeds(json) {
     ul.appendChild(li)
   }
 }
+const selectBox = document.getElementById('breed-dropdown');
+const ul = document.getElementById('dog-breeds')
+
+console.log(ul)
+selectBox.addEventListener('change', (event) => {
+  const ul = document.getElementById('dog-breeds')
+  alert("test")
+  for(let child=ul.firstChild; child!==null; child=child.nextSibling) {
+      if(child.innerHTML.charAt(0) != this.value)
+      {
+        child.style = "none"
+      }
+  }
+
+}, false)
