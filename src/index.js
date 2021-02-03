@@ -45,6 +45,10 @@ function renderbreeds(json) {
         {
           children[i].style.display = "none"
         }
+        else 
+        {
+          children[i].style.display = "block"
+        }
     }
 
   }, false)
