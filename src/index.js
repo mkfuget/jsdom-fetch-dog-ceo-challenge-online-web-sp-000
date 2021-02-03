@@ -41,7 +41,7 @@ function renderbreeds(json) {
     console.log(ul.children)
     for(let i=0; i < children.length; i++) {
         console.log(child.innerHTML)
-        if(child.text.charAt(0) != event.target.value)
+        if(children[i].innerHTML.charAt(0) != event.target.value)
         {
           child.style = "none"
         }
