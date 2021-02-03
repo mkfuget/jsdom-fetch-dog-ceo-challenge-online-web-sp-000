@@ -39,7 +39,7 @@ function renderbreeds(json) {
     const ul = document.getElementById('dog-breeds')
     console.log(event.target.value)
     for(let child=ul.firstChild; child!==null; child=child.nextSibling) {
-        if(child.innerHTML.charAt(0) != event.target.value)
+        if(child.text.charAt(0) != event.target.value)
         {
           child.style = "none"
         }
